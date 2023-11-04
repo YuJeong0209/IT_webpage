@@ -1,0 +1,906 @@
+<style>
+    .subBox_bg {
+        background: #131313;
+    }
+    .mainBox {
+        width: 100%;
+        /* max-width: 1920px; */
+        margin: auto;
+        /* height: 100vh; */
+        /* 올리에서 안먹음 */
+    }
+
+    /* sub Video */
+    .mainImg {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/mainImg02_D.png") no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 1080px;
+    }
+
+    .main_wrapper01 {
+        width: 446px;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_img01 {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/main_logo01.png") no-repeat center center;
+        background-size: cover;
+        width: 63px;
+        height: 62px;
+    }
+
+    .main_img02 {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/main_logo02.png") no-repeat center center;
+        background-size: cover;
+        width: 226px;
+        height: 34px;
+    }
+
+    .main_txt01 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: -0.02em;
+    }
+
+    .main_txt02 {
+        color: #fff;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+    }
+
+    .hp_aiCen {
+        align-items: center;
+    }
+
+    /* sub Middle */
+    .sub_img01 {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/Novaflo_img.png") no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        /* max-width: 1920px; */
+        min-height: 1666px;
+    }
+
+    .sub_txtWrapper01 {
+        padding: 240px 15.9% 177px;
+    }
+
+    .sub_txt01 {
+        font-size: 36px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+    }
+
+    .sub_txt02 {
+        font-size: 22px;
+        font-weight: 400;
+        color: #b5b5b5;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+    }
+
+    .sub_txtWrapper02 {
+        margin: 0 10% 0 30%;
+        max-width: 980px;
+        word-break: keep-all;
+    }
+
+    .sub_txt03 {
+        font-size: 22px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+    }
+
+    .sub_txt04 {
+        font-size: 18px;
+        font-weight: 400;
+        color: #b5b5b5;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+    }
+
+    .hp_txtCfff {
+        color: #fff !important;
+    }
+
+    .sub_img02 {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/sub_img01.png") no-repeat center center;
+        background-size: cover;
+        width: 135px;
+        height: 76px;
+    }
+
+    /* sub History */
+    .sub_hisWapper {
+        background: #131313;
+    }
+
+    .sub_box {
+        padding: 110px 15.9% 0;
+    }
+
+    .sub_inner {
+        /* display: flex; */
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+    .sub_txtWrapper03 {
+        min-width: 700px;
+    }
+
+    .sub_img03 {
+        margin-left: auto;
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/sub_img04.png") no-repeat center center;
+        background-size: cover;
+        width: 346px;
+        height: 460px;
+    }
+
+    .sub_hisBox {
+        display: flex;
+        align-items: center;
+    }
+
+    .sub_txt05 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+
+    .sub_txt06 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        opacity: 0.3;
+    }
+
+    .sub_txt07 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        color: #F0F0F0;
+    }
+
+    .sub_img04 {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/sub_img03.png") no-repeat center center;
+        background-size: cover;
+        width: 24px;
+        height: 24px;
+    }
+
+    .sub_line01 {
+        background: #2E2E2E;
+        width: 2px;
+        height: 130px;
+        margin-left: 150px;
+        margin-top: -8px !important;
+        margin-bottom : -60px;
+    }
+
+    .sub_line02 {
+        background: #2E2E2E;
+        width: 2px;
+        height: 200px;
+        margin-left: 150px;
+        margin-top: -102px !important;
+    }
+
+    .sub_line03 {
+        background:  #2E2E2E;
+        width: 2px;
+        height: 300px;
+        margin-left: 150px;
+        margin-top: -198px !important;
+    }
+
+    .hp_m139N5 {
+        margin-top: -5px !important;
+        margin-left: 139px;
+    }
+
+    .hp_nMt8 {
+        margin-top: -8px !important;
+    }
+
+    .hp_aIfS {
+        align-items: flex-start !important;
+    }
+
+    /* sub_btn */
+    .sub_btnWrapper {
+        width: 100%;
+        height: 950px;
+    }
+
+    .sub_bg01 {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/sub_bg01.png") no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        /* max-width: 1920px; */
+        height: 950px;
+    }
+
+    .sub_imgWrapper {
+        padding: 50px 15.9% 0;
+    }
+
+    .sub_img05 {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/sub_img05.png") no-repeat center center;
+        background-size: cover;
+        width: 346px;
+        height: 460px;
+        /* position: absolute;
+        margin-top: -1100px !important; */
+        margin-top: -650px !important;
+    }
+
+    .sub_img05:after {
+        content : '';
+        position: absolute;
+        background : linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%) ;
+        top : 0;
+        left : 0;
+        right : 0;
+        bottom : 0;
+    }
+
+    .sub_line04 {
+        background: linear-gradient(#2E2E2E 0%, rgba(0,0,0,0) 70%);
+        width: 2px;
+        height: 700px;
+        margin-left: 150px;
+        margin-top: -50px !important;
+    }
+
+    .hp_nMt100 {
+        margin-top: -100px !important;
+    }
+
+    .hp_nMt550 {
+        margin-top: -550px !important;
+    }
+
+    .hp_zI1 {
+        position: sticky;
+        z-index: 1;
+    }
+
+    .hp_zI2 {
+        position: sticky;
+        z-index: 2;
+    }
+
+    .btn_wrapper {
+        width: 100%;
+        max-width: 688px;
+        padding: 0 14px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 648px;
+        height: 100px;
+        border-radius: 50px;
+        background: linear-gradient(279.34deg, #FF0000 -58.58%, #FF0000 -54.14%, rgba(246, 20, 39, 0.951194) -15.68%, rgba(201, 116, 229, 0.716502) 37.31%, #415FFF 85.25%, rgba(0, 255, 240, 0) 183.66%), #FFFFFF;
+        background-size: 102%;
+        background-position-x: -2px;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .btnTxt {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+
+    .btn:hover {
+        background: #fff;
+    }
+
+    .btn:hover .btnTxt {
+        background: linear-gradient(279.34deg, #FF0000 -58.58%, #FF0000 -54.14%, rgba(201, 116, 229, 0.716502) 20.51%, #415FFF 102.92%, rgba(0, 255, 240, 0) 110.49%), #FFFFFF;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-style: unset;
+        border-color: unset;
+        padding: 0;
+        border-width: 0;
+        background-color: unset;
+    }
+
+    /* 전체 미디어쿼리 */
+    .M_sub_img01, .M_sub_inner, .M_btnTtl {
+        display: none;
+    }
+
+    /* pc */
+    @media screen and (min-width:992px) {}
+
+    /* tablet */
+    @media screen and (max-width:992px) {}
+
+    /* mobile */
+    @media screen and (max-width:500px) {
+        .Pc_sub_img01, .Pc_sub_inner, .Pc_btnTtl {
+            display: none;
+        }
+
+        .M_sub_img01, .M_sub_inner, .M_btnTtl {
+            display: block;
+        }
+
+        .mainImg {
+            background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/mainImg02_M.png") no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 720px;
+        }
+
+        .main_wrapper01 {
+            align-items: flex-start;
+            padding: 0 14px;
+            margin-top: 394px;
+            width: 100%;
+        }
+
+        .main_img01 {
+            width: 30px;
+            height: 30px;
+        }
+
+        .main_txt01 {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: left;
+        }
+
+        .main_img02 {
+            background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/main_logo02M.png") no-repeat center center;
+            background-size: cover;
+            width: 144px;
+            height: 22px;
+        }
+
+        .main_txt02 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .sub_txtWrapper01 {
+            padding: 131px 14px 0;
+        }
+
+        .sub_txt01 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        .sub_txt02 {
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        .sub_txtWrapper02 {
+            margin: 0;
+            padding: 179px 14px 0;
+        }
+
+        .sub_txt03 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .sub_txt04 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .sub_img02 {
+            width: 102px;
+            height: 63px;
+            background-size: contain;
+        }
+
+        .sub_img01 {
+            background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/M_subImg01_D.png") no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            min-height: 1700px;
+        }
+
+        .M_subImg02 {
+            background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/M_subImg02.png") no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            min-height: 75px;
+            margin-top: -10px;
+        }
+
+        .M_subImg03 {
+            background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/M_subImg03.png") no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            max-width: 234px;
+            max-height: 410px;
+        }
+
+        .sub_txtWrapper03{
+            min-width: 340px !important;
+        }
+
+        .sub_bg {
+            background-color: #131313 !important;
+        }
+
+        .sub_box{
+            padding: 2px 14px 0;
+        }
+
+        .sub_line01, .sub_line02, .sub_line03, .sub_line04{
+            margin-left: 21px;
+        }
+
+        .hp_m139N5{
+            margin-left: 10px;
+        }
+
+        .sub_txt05 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .sub_txt06, .sub_txt07 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .sub_line03{
+            margin-top: -221px !important;
+        }
+
+        .sub_imgWrapper{
+            padding: 50px 14px 0;
+        }
+
+        .sub_img05{
+            background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/sub_img04.png") no-repeat center center;
+            background-size: cover;
+            width: 175px;
+            height: 233px;
+            margin-left: auto;
+        }
+
+        .hp_nMt550{
+            margin-top: -700px !important;
+        }
+
+
+    }
+</style>
+
+
+<div class="subBox_bg">
+<!-- sub box -->
+
+    <!-- sub Video -->
+    <div class="mainImg hp_dFlex">
+        <div class="main_wrapper01">
+            <div class="main_img01 hp_mb100 M_mb50"></div>
+            <div class="hp_dFlex hp_aiCen hp_mb30 M_mb20">
+                <div class="main_img02 hp_mr10"></div>
+                <div class="main_txt02">는</div>
+            </div>
+            <div class="main_txt01">
+                <div class="hp_mb20">플랫폼 기반의</div>
+                <strong>XR 콘텐츠 전문 개발사입니다.</strong>
+            </div>
+        </div>
+    </div>
+
+<div class="mainBox">
+    <!-- sub Middle -->
+    <div class="sub_img01 sub_bg Pc_sub_img01">
+        <div class="sub_txtWrapper01">
+            <div class="sub_txt01 hp_mb30">노바플로는 국내 최정상 기업, 교육기관, </div>
+            <div class="sub_txt01 hp_mb30">병원 등의 XR 콘텐츠를 전문적으로 개발하던 경력자들이 </div>
+            <div class="sub_txt01 hp_fw700 hp_mb53">한 뜻으로 모여 창업한 XR 기반의 회사입니다.</div>
+            <div class="sub_txt02 hp_mb27">XR 시장 대부분의 콘텐츠는 기획 능력의 부족으로 그래픽 퀄리티, 사용자 편의성 등이 현저히 떨어지는 <strong>실패한
+                    콘텐츠</strong>가 되기 쉽상입니다.</div>
+            <div class="sub_txt02 hp_fw700">그럼 완성도 높은 결과물을 내려면 어떻게 해야 할까요? </div>
+        </div>
+
+        <div class="sub_txtWrapper02">
+            <div class="sub_txt03 hp_fw700 hp_mb60">XR 콘텐츠는 단순히 보여지는 콘텐츠만 개발하는 것에서 끝나지 않습니다.</div>
+            <div class="sub_txt04 hp_mb20">노바플로는 XR 컨텐츠를 지속적으로 활용하고 관리 할 수 있는 플랫폼적 기획 병행을 통해</div>
+            <div class="sub_txt04 hp_mb20">지속적 사용이 가능한, 완성도 높은 결과물을 내고자 끊임없이 고민하고, 발전해왔습니다.</div>
+            <div class="sub_txt04 hp_mb20">XR이 태동하던 2010년 초반부터 다양한 콘텐츠와 플랫폼 기획 및 개발을 진행하면서 남다른 노하우를 쌓았고,</div>
+            <div class="sub_txt04 hp_mb60">기술력과 노하우를 인정받아 창업 2달만에 시드머니 투자 유치를 완료하여 투자사와의 협업을 통해 자체 플랫폼을 개발, 서비스하고
+                있습니다.</div>
+            <div class="sub_txt04 hp_mb20">현재는 플랫폼을 활용한 XR 체험, 전시, 교육 등을 개발하여 </div>
+            <div class="sub_txt04 hp_mb20">국내 최정상 엔터테이먼트와 아트센터의 XR 콘텐츠 플랫폼까지 직접 수주하여 개발하고 있습니다.</div>
+            <div class="sub_txt04 hp_mb20">다양한 뉴미디어 콘텐츠 구축에 어려움을 겪고 있으시다면 노바플로만의 노하우로 도와드리겠습니다.</div>
+            <div class="sub_txt04 hp_txtCfff hp_fw700 hp_mb60">언제나, 귀사의 콘텐츠가 최고의 콘텐츠가 될 수 있도록 노력하겠습니다.</div>
+            <div class="sub_img02"></div>
+        </div>
+    </div>
+
+    <!-- M -->
+    <div class="sub_img01 sub_bg M_sub_img01">
+        <div class="sub_txtWrapper01">
+            <div class="sub_txt01 M_mb14">노바플로는</div>
+            <div class="sub_txt01 M_mb14">국내 최정상 기업, 교육기관,</div>
+            <div class="sub_txt01 M_mb14">병원 등의 XR 콘텐츠를</div>
+            <div class="sub_txt01 M_mb40">전문적으로 개발하던 경력자들이</div>
+            <div class="sub_txt01 hp_fw700 M_mb14">한 뜻으로 모여 창업한</div>
+            <div class="sub_txt01 hp_fw700 ">XR 기반의 회사입니다.</div>
+            <div class="M_subImg02 M_mb40"></div>
+            <div class="sub_txt02 M_mb14">XR 시장 대부분의 콘텐츠는</div>
+            <div class="sub_txt02 M_mb14">기획 능력의 부족으로</div>
+            <div class="sub_txt02 M_mb14">그래픽 퀄리티, 사용자 편의성 등이</div>
+            <div class="sub_txt02 M_mb14">현저히 떨어지는</div>
+            <div class="sub_txt02 M_mb24"><strong>실패한 콘텐츠</strong> 가 되기 쉽상입니다.</div>
+            <div class="sub_txt02 hp_fw700 M_mb14">그럼 완성도 높은 결과물을 내려면</div>
+            <div class="sub_txt02 hp_fw700">어떻게 해야 할까요?</div>
+        </div>
+
+        <div class="sub_txtWrapper02">
+            <div class="M_subImg03">
+                <div class="" style="width: 310px;">
+                    <div class="sub_txt03 hp_fw700 M_mb10">XR 콘텐츠는 단순히 보여지는 콘텐츠만</div>
+                <div class="sub_txt03 hp_fw700 M_mb40">개발하는 것에서 끝나지 않습니다.</div>
+                <div class="sub_txt04 M_mb10">노바플로는 XR 컨텐츠를 지속적으로 활용하고</div>
+                <div class="sub_txt04 M_mb10">관리 할 수 있는 플랫폼적 기획 병행을 통해</div>
+                <div class="sub_txt04 M_mb10">지속적 사용이 가능한, 완성도 높은 결과물을 내고자</div>
+                <div class="sub_txt04 M_mb40">끊임없이 고민하고, 발전해왔습니다.</div>
+                <div class="sub_txt04 M_mb10">XR이 태동하던 2010년 초반부터 다양한 콘텐츠와</div>
+                <div class="sub_txt04 M_mb10">플랫폼 기획 및 개발을 진행하면서 남다른 노하우를 쌓았고,</div>
+                <div class="sub_txt04 M_mb10">기술력과 노하우를 인정받아 창업 2달만에</div>
+                <div class="sub_txt04 M_mb10">시드머니 투자 유치를 완료하여 투자사와의 협업을 통해</div>
+                <div class="sub_txt04 M_mb40">자체 플랫폼을 개발, 서비스하고 있습니다.</div>
+                <div class="sub_txt04 M_mb10">현재는 플랫폼을 활용한 XR 체험, 전시, 교육 등을 개발하여 </div>
+                <div class="sub_txt04 M_mb10">국내 최정상 엔터테이먼트와 아트센터의</div>
+                <div class="sub_txt04 M_mb10">XR 콘텐츠 플랫폼까지 직접 수주하여 개발하고 있습니다.</div>
+                <div class="sub_txt04 M_mb10">다양한 뉴미디어 콘텐츠 구축에 어려움을 겪고 있으시다면</div>
+                <div class="sub_txt04 M_mb40">노바플로만의 노하우로 도와드리겠습니다.</div>
+                <div class="sub_img02"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sub History -->
+    <div class="sub_hisWapper">
+        <div class="sub_box">
+            <div class="sub_inner Pc_sub_inner">
+                <div class="sub_img03"></div>
+                <div class="hp_mt60">
+                    <div class=" hp_mb80">
+                        <div class="sub_txt01 hp_mb20">노바플로 팀은 </div>
+                        <div class="sub_txt01 hp_fw700">쉼 없이 뉴미디어의 새로운 흐름을 만들고 있습니다.</div>
+                    </div>
+                    <div class="sub_txtWrapper03">
+                        <div class="sub_hisBox">
+                            <div class="sub_txt05 hp_mr80">2023</div>
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">8월 </div>
+                                <div class="sub_txt07">변리사 중개 플랫폼 개발 수주</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">6월 </div>
+                                <div class="sub_txt07">에버랜드 WEB AR 콘텐츠 기획 및 기술 개발 서포트</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">5월 </div>
+                                <div class="sub_txt07">삼성 갤럭시 언팩 Z Flip5 프로모션 콘텐츠 개발</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">3월 </div>
+                                <div class="sub_txt07">하나은행 트래블로그, 환전지갑 콘텐츠 키오스크 개발</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">ETC </div>
+                                <div class="sub_txt07">
+                                    영화키스톤 브랜드 홈페이지 제작<br><br>
+                                    용인공원 브랜드 홈페이지 제작, ERP연동<br><br>
+                                    용인 에버라인 전철 브랜드 홈페이지 제작<br>  <br>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+                        <div class="sub_hisBox">
+                            <div class="sub_txt05 hp_mr80">2022</div>
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">8월 </div>
+                                <div class="sub_txt07">(주) 자이언트스텝 차량 컨피규레이터 수주</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">6월 </div>
+                                <div class="sub_txt07">(주) 용인공원 라이프 브랜드 홈페이지 수주</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">5월 </div>
+                                <div class="sub_txt07">충남 IP 개발 및 메타버스 플랫폼 개발 지원사업 선정</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">4월 </div>
+                                <div class="sub_txt07">SM C&C 메타버스 세계관 AR 콘텐츠 수주</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">3월 </div>
+                                <div class="sub_txt07">(주) 가나오케이 AR 가상전시관 플랫폼 수주</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">2월 </div>
+                                <div class="sub_txt07">
+                                    엔젤투자 완료
+                                    <br><br>(주) 넥스트비즈 업무 협약 진행
+                                    <br><br>주식회사 노바플로 창업
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_line02"></div>
+
+                        <div class="sub_hisBox hp_nMt8 hp_aIfS">
+                            <div class="sub_txt05 hp_mr83">2021</div>
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr40"></div>
+                                <div class="sub_txt06 hp_mr40">12월 </div>
+                                <div class="sub_txt07">
+                                    개인사업자 명의로 히스토리 외 다수 앱&웹 서비스 개발
+                                    <br><br>(주) 누리다 위치기반 채팅 서비스 타로톡 개발
+                                    <br><br>(주) 영화키스톤 브랜드 홈페이지 개발
+                                    <br><br>(주) 웰에이징 엑소 바이오 브랜드 홈페이지 개발
+                                    <br><br>(주) 이륜 브랜드 홈페이지 개발
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_line03"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- M -->
+            <div class="sub_inner M_sub_inner">
+                <div class="hp_mt60">
+                    <div class=" hp_mb80">
+                        <div class="sub_txt01 M_mb10">노바플로 팀은 </div>
+                        <div class="sub_txt01 hp_fw700 M_mb10">쉼 없이 뉴미디어의</div>
+                        <div class="sub_txt01 hp_fw700 M_mb10">새로운 흐름을 만들고 있습니다.</div>
+                    </div>
+                    <div class="sub_txtWrapper03">
+                        <div class="sub_txt05 M_mb20">2023</div>
+                        <div class="sub_hisBox hp_ml10">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">8월 </div>
+                                <div class="sub_txt07">변리사 중개 플랫폼 개발 수주 </div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+                        <div class="sub_hisBox hp_ml10">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">6월 </div>
+                                <div class="sub_txt07">에버랜드 WEB AR 콘텐츠 기획 및 기술 개발 서포트 </div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+                        <div class="sub_hisBox hp_ml10">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">5월 </div>
+                                <div class="sub_txt07">삼성 갤럭시 언팩 Z Flip5 프로모션 콘텐츠 개발 </div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+                        <div class="sub_hisBox hp_ml10">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">3월 </div>
+                                <div class="sub_txt07">하나은행 트래블로그, 환전지갑 콘텐츠 키오스크 개발 </div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+                        <div class="sub_hisBox hp_ml10">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">ETC</div>
+                                <div class="sub_txt07">
+                                    영화키스톤 브랜드 홈페이지 제작<br><br>
+                                    용인공원 브랜드 홈페이지 제작, ERP연동<br><br>
+                                    용인 에버라인 전철 브랜드 홈페이지 제작
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+
+
+                        <div class="sub_txt05 M_mb20">2022</div>
+                        <div class="sub_hisBox hp_ml10">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">8월 </div>
+                                <div class="sub_txt07">(주) 자이언트스텝 차량 컨피규레이터 수주 </div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+                        <div class="sub_hisBox hp_ml10">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">6월 </div>
+                                <div class="sub_txt07">(주) 용인공원 라이프 브랜드 홈페이지 수주</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">5월 </div>
+                                <div class="sub_txt07">충남 IP 개발 및 <br>메타버스 플랫폼 개발 지원사업 선정</div>
+                                
+                            </div>
+                        </div>
+                        <div class="sub_line01 M_nMt17"></div>
+
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">4월 </div>
+                                <div class="sub_txt07">SM C&C 메타버스 세계관 AR 콘텐츠 수주</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">3월 </div>
+                                <div class="sub_txt07">(주) 가나오케이 AR 가상전시관 플랫폼 수주</div>
+                            </div>
+                        </div>
+                        <div class="sub_line01"></div>
+
+                        <div class="sub_hisBox hp_m139N5">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">2월 </div>
+                                <div class="sub_txt07">
+                                    엔젤투자 완료
+                                    <br><br>(주) 넥스트비즈 업무 협약 진행
+                                    <br><br>주식회사 노바플로 창업
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_line02"></div>
+
+                        <div class="sub_txt05 M_mb27">2021</div>
+                        <div class="sub_hisBox hp_nMt8 hp_aIfS hp_ml10">
+                            <div class="hp_dFlex">
+                                <div class="sub_img04 hp_mr10"></div>
+                                <div class="sub_txt06 hp_mr14">12월 </div>
+                                <div class="sub_txt07">
+                                    개인사업자 명의로 히스토리 외 <br>다수 앱&웹 서비스 개발
+                                    <br><br>(주) 누리다 위치기반 채팅 서비스 타로톡 개발
+                                    <br><br>(주) 영화키스톤 브랜드 홈페이지 개발
+                                    <br><br>(주) 웰에이징 엑소 바이오 브랜드 홈페이지 개발
+                                    <br><br>(주) 이륜 브랜드 홈페이지 개발
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub_line03"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- sub_btn -->
+    <div class="sub_btnWrapper">
+        <div class="sub_bg01 hp_zI1">
+            <div class="sub_imgWrapper">
+                <div class="sub_line04"></div>
+                <div class="sub_img05"></div>
+            </div>
+        </div>
+        <!-- main Button -->
+        <div class="hp_nMt550 hp_zI2">
+            <div class="main_txt02 hp_txtCen hp_mb70 Pc_btnTtl">새로운 <strong>‘흐름’</strong>에 올라탈 때입니다.</div>
+            <div class="main_txt02 hp_txtCen M_btnTtl hp_mb10">이제</div>
+            <div class="main_txt02 hp_txtCen M_btnTtl hp_mb10">새로운 <strong>‘흐름’</strong>에</div>
+            <div class="main_txt02 hp_txtCen hp_mb70 M_btnTtl">올라탈 때입니다.</div>
+            <div class="hp_txtCen">
+                <button class="btn_wrapper" type="button" onclick="location.href='/coun/?M2_IDX=25306'">
+                    <div class="btn">
+                        <div class="btnTxt">온라인 문의 바로가기</div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
