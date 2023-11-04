@@ -1,0 +1,380 @@
+<style>
+    .subBox_bg {
+        background: #131313;
+    }
+
+    .mainBox {
+        width: 100%;
+        /* max-width: 1920px; */
+        margin: auto;
+        /* height: 100vh; */
+        /* 올리에서 안먹음 */
+    }
+
+    /* sub Video */
+    .mainImg {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/mainImg03_D.png") no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 1080px;
+    }
+
+    .main_wrapper01 {
+        width: 446px;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_img01 {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/main_logo01.png") no-repeat center center;
+        background-size: cover;
+        width: 63px;
+        height: 62px;
+    }
+
+    .main_img02 {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/main_logo02.png") no-repeat center center;
+        background-size: cover;
+        width: 226px;
+        height: 34px;
+    }
+
+    .main_txt01 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: -0.02em;
+    }
+
+    .main_txt02 {
+        color: #fff;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+    }
+
+    .hp_aiCen {
+        align-items: center;
+    }
+
+    /* sub Middle */
+    .sub_platformWrapper {
+        width: 100%;
+        background: #131313;
+    }
+
+    .sub_Inner {
+        padding: 20px 15.9% 200px;
+    }
+
+    .sub_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #373737;
+    }
+
+    .sub_box:last-child {
+        border-bottom: none;
+    }
+
+    .sub_txt01 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        color: #fff;
+    }
+
+    .Pc_sub_txt01{
+        width: 430px;
+    }
+
+    .sub_txt02 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.03em;
+        color: #b5b5b5;
+    }
+
+    .Pc_sub_txt02{
+        width: 571px;
+    }
+
+    .sub_imgA {
+        height: fit-content;
+    }
+
+    .sub_img01 {
+        background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/sub_img06.png") no-repeat center center;
+        background-size: cover;
+        width: 88px;
+        height: 88px;
+    }
+
+    /* 전체 미디어쿼리 */
+    .M_sub_txt02 {
+        display: none;
+    }
+
+    /* pc */
+    @media screen and (min-width:992px) {}
+
+    /* tablet */
+    @media screen and (max-width:992px) {}
+
+    /* mobile */
+    @media screen and (max-width:500px) {
+        .Pc_sub_txt02 {
+            display: none;
+        }
+
+        .M_sub_txt02 {
+            display: block;
+        }
+
+        .main_wrapper01 {
+            align-items: flex-start;
+            padding: 0 14px;
+            margin-top: 394px;
+            width: 100%;
+        }
+
+        .main_img01 {
+            width: 30px;
+            height: 30px;
+        }
+
+        .main_txt01 {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: left;
+        }
+
+        .main_img02 {
+            background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/main_logo02M.png") no-repeat center center;
+            background-size: cover;
+            width: 144px;
+            height: 22px;
+        }
+
+        .mainImg {
+            background: url("https://novaflo.s3.ap-northeast-2.amazonaws.com/images/mainImg03_M.png") no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 720px;
+            margin-top: -10px;
+        }
+
+        .main_txt02 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .sub_Inner {
+            padding: 80px 14px 220px;
+        }
+
+        .sub_txt01 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        .sub_txt02 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .M_sub_imgWrapper {
+            width: 300px;
+            margin-left: auto;
+        }
+
+        .M_sub_imgA {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            margin-left: auto;
+        }
+
+        .sub_img01 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .sub_box:last-child {
+            border-bottom: 2px solid #373737;
+        }
+
+    }
+</style>
+
+
+<div class="subBox_bg">
+<!-- sub box -->
+
+    <!-- sub Video -->
+    <div class="mainImg hp_dFlex">
+        <div class="main_wrapper01">
+            <div class="main_img01 hp_mb100 M_mb50"></div>
+            <div class="hp_dFlex hp_aiCen M_mb20 hp_mb30">
+                <div class="main_img02 hp_mr10"></div>
+                <div class="main_txt02">는</div>
+            </div>
+            <div class="main_txt01">
+                <div class="hp_mb20">남들과 다른 경험으로</div>
+                <strong>최고를 만듭니다.</strong>
+            </div>
+        </div>
+    </div>
+
+<div class="mainBox">
+    <!-- sub Middle -->
+    <!-- background: #131313; -->
+    <div class="sub_platformWrapper">
+        <div class="sub_Inner">
+            <div class="sub_box">
+                <div class="sub_txt01 Pc_sub_txt01">
+                    <div class="hp_mb20 M_mb10">Geo Fencing AR</div>
+                    <div class="">GPS 기반의 AR 콘텐츠 플랫폼</div>
+                </div>
+                <div class="sub_txt02 hp_mb80 hp_mt80 Pc_sub_txt02 Pc_sub_txt02">
+                    <div class="hp_mb20">남들과 다른, 새로운 마케팅이 필요하신가요?</div>
+                    <div class="hp_mb20">노바플로의 ‘Geo Fencing AR’을 통해 GPS 마커 기반의 AR 콘텐츠 제작이 보다 쉬워집니다.</div>
+                    <div class="hp_mb20">우리 회사만의 포켓몬 고를 원하신다면 오롯이 콘텐츠 기획에만 집중하세요. </div>
+                    <div class="">노하우를 바탕으로 개발을 포함한 모든 것을 노바플로가 서포트 하겠습니다.</div>
+                </div>
+                <!-- M -->
+                <div class="sub_txt02 hp_mb80 hp_mt80 M_sub_txt02 M_mt30 M_mb20">
+                    <div class="hp_mb10">남들과 다른, 새로운 마케팅이 필요하신가요?</div>
+                    <div class="hp_mb10">노바플로의 ‘Geo Fencing AR’을 통해 GPS와 마커 베이스의 AR 콘텐츠</div>
+                    <div class="hp_mb10">제작이 보다 쉬워집니다. 우리 회사만의 포켓몬 고를 원하신다면</div>
+                    <div class="hp_mb10">오롯이 콘텐츠 기획에만 집중하세요.</div>
+                    <div class="">나머지 모든 것들을 저희가 서포트 하겠습니다.</div>
+                </div>
+                <div class="M_sub_imgWrapper">
+                    <a class="sub_imgA M_sub_imgA M_mb20" href="#">
+                        <div class="sub_img01"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sub_box">
+                <div class="sub_txt01 M_mt60 Pc_sub_txt01">
+                    <div class="hp_mb20 M_mb10">XR PLACE</div>
+                    <div class="">XR 기반 가상공간 구축 플랫폼</div>
+                </div>
+                <div class="sub_txt02 hp_mb80 hp_mt80 Pc_sub_txt02 Pc_sub_txt02">
+                    <div class="hp_mb20">VR, AR, 웹, 앱을 기반으로 3D 가상공간을 구축합니다.</div>
+                    <div class="hp_mb20">국내 정상급 기업, 병원, 아트센터 등 다양한 가상공간 구축 경험과 </div>
+                    <div class="hp_mb20">확장성 있게 개발된 가상공간 전용 관리툴을 바탕으로</div>
+                    <div class="">개발 후 지속적인 확장과 관리가 가능한 고퀄리티 가상공간 플랫폼을 제공합니다.</div>
+                </div>
+                <!-- M -->
+                <div class="sub_txt02 hp_mb80 hp_mt80 M_sub_txt02 M_mt30 M_mb20">
+                    <div class="hp_mb10">VR, AR, 웹, 앱을 기반으로 3D 가상공간을 구축합니다.</div>
+                    <div class="hp_mb10">국내 정상급 기업, 병원, 아트센터 등 다양한 가상공간 구축</div>
+                    <div class="hp_mb10">경험과 올리사이트만의 관리툴을 바탕으로</div>
+                    <div class="hp_mb10">개발 후 지속적인 관리가 가능한</div>
+                    <div class="">고퀄리티 가상공간 플랫폼을 제공합니다.</div>
+                </div>
+                <div class="M_sub_imgWrapper">
+                    <a class="sub_imgA M_sub_imgA M_mb20" href="#">
+                        <div class="sub_img01"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sub_box">
+                <div class="sub_txt01 M_mt60 Pc_sub_txt01">
+                    <div class="hp_mb20 M_mb10">노바에듀 XR</div>
+                    <div class="">실감콘텐츠 기반의 체험형 LMS</div>
+                </div>
+                <div class="sub_txt02 hp_mb80 hp_mt80 Pc_sub_txt02 Pc_sub_txt02">
+                    <div class="hp_mb20">UNITY 3D 엔진과 WebGL을 이용하여 실감콘텐츠 기반의 LMS 제작이 가능합니다.</div>
+                    <div class="hp_mb20">교육생이 단순히 동영상으로 듣는 교육이 아닌, 직접 콘텐츠를 플레이 하고 기록하여</div>
+                    <div class="hp_mb20">결과 페이지를 통해 체계적으로 피드백 할 수 있어 교육 효과를 극대화 할 수 있습니다.</div>
+                    <div class="hp_mb20">고위험 교육, 의료 교육, 실습 교육, 기타 게이미피케이션 기반의 교육이 필요하다면</div>
+                    <div class="">노바에듀 XR을 이용한 구축이 최고의 선택이 될 것이라 자부합니다.</div>
+                </div>
+                <!-- M -->
+                <div class="sub_txt02 hp_mb80 hp_mt80 M_sub_txt02 M_mt30 M_mb20">
+                    <div class="hp_mb10">UNITY 3D 엔진과 WEB GL을 이용하여 실감콘텐츠 기반의</div>
+                    <div class="hp_mb10">LMS 제작이 가능합니다. 단순히 동영상으로 듣는 교육이 아닌,</div>
+                    <div class="hp_mb10">교육생이 실제 콘텐츠를 체험할 수 있어 교육 효율을</div>
+                    <div class="hp_mb10">극대화합니다. 고위험 교육, 의료 교육, 실습 교육,</div>
+                    <div class="hp_mb10">기타 게이미피케이션 기반의 교육이 필요하다면 올리 에듀</div>
+                    <div class="">XR을 이용한 구축이 최고의 선택이 될 것이라 자부합니다.</div>
+                </div>
+                <div class="M_sub_imgWrapper">
+                    <a class="sub_imgA M_sub_imgA M_mb20" href="#">
+                        <div class="sub_img01"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sub_box">
+                <div class="sub_txt01 M_mt60 Pc_sub_txt01">
+                    <div class="hp_mb20 M_mb10">XR 콘텐츠, </div>
+                    <div class="">어플리케이션 개발</div>
+                </div>
+                <div class="sub_txt02 hp_mb80 hp_mt80 Pc_sub_txt02 Pc_sub_txt02">
+                    <div class="hp_mb20">플렛폼 외 XR 기반 콘텐츠, 다양한 기능의 일반 어플리케이션 개발을 진행합니다.</div>
+                    <div class="hp_mb20">기존에 구축 및 검증이 완료된 다양한 종류의 api를 활용하여</div>
+                    <div class="">귀사가 원하는 콘텐츠와 어플리케이션을 보다 완성도 높게 구축합니다.. </div>
+                </div>
+                <!-- M -->
+                <div class="sub_txt02 hp_mb80 hp_mt80 M_sub_txt02 M_mt30 M_mb20">
+                    <div class="hp_mb10">플렛폼 외 XR 기반 콘텐츠, 다양한 기능의</div>
+                    <div class="hp_mb10">일반 어플리케이션 개발을 진행합니다.</div>
+                    <div class="hp_mb10">기존에 구축 및 검증이 완료된 다양한 종류의 api를 활용하여</div>
+                    <div class="hp_mb10">귀사가 원하는 콘텐츠와 어플리케이션을</div>
+                    <div class="">보다 완성도 높게 구축합니다.</div>
+                </div>
+                <div class="M_sub_imgWrapper">
+                    <a class="sub_imgA M_sub_imgA M_mb20" href="#">
+                        <div class="sub_img01"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sub_box">
+                <div class="sub_txt01 M_mt60 Pc_sub_txt01">
+                    <div class="hp_mb20 M_mb10">자체 웹빌더 기반</div>
+                    <div class="">반응형 홈페이지 개발</div>
+                </div>
+                <div class="sub_txt02 hp_mb80 hp_mt80 Pc_sub_txt02 Pc_sub_txt02">
+                    <div class="hp_mb20">관리툴까지 100% 반응형으로 이루어진,</div>
+                    <div class="hp_mb20">사용자 편의성 중심의 자체 빌더를 통해 반응형 홈페이지를 개발합니다.</div>
+                    <div class="hp_mb20">한번 만들어서 오래 사용하실 수 있도록 완성도 높은 디자인과</div>
+                    <div class="">수준 높은 개발 산출물을 제공하고 있습니다.</div>
+                </div>
+                <!-- M -->
+                <div class="sub_txt02 hp_mb80 hp_mt80 M_sub_txt02 M_mt30 M_mb20">
+                    <div class="hp_mb10">관리툴까지 100% 반응형으로 이루어진,</div>
+                    <div class="hp_mb10">사용자 편의성 중심의 자체 빌더를 통해</div>
+                    <div class="hp_mb10">반응형 홈페이지를 개발합니다. 한 번 만들어서</div>
+                    <div class="hp_mb10">오래 사용하실 수 있도록 완성도 높은 디자인과 수준 높은</div>
+                    <div class="">개발 산출물을 제공하고 있습니다.</div>
+                </div>
+                <div class="M_sub_imgWrapper">
+                    <a class="sub_imgA M_sub_imgA M_mb20" href="#">
+                        <div class="sub_img01"></div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</div>
